@@ -1,0 +1,902 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#"
+     xml:base="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology/2.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of_by_disorder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of_by_disorder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_disorder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of_by_drug -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of_by_drug">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_drug"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of_by_food -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of_by_food">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_abundance_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of_by_metabolite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of_by_metabolite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression_by_metabolite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of_by_microbiota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of_by_microbiota">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#changes_the_expression_of"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression_by_microbiota"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#generates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#generates">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_generated_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results_by_disorder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results_by_disorder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_disorder"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results_by_drug -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results_by_drug">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_drug"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results_by_food -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results_by_food">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_abundance_change_results"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_food"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results_by_metabolite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results_by_metabolite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results_by_metabolite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results_by_microbiota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results_by_microbiota">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_expression_change_results"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results_by_microbiota"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_generation_results -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_generation_results">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_generation_results"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_kegg_character -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#has_kegg_character">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_kegg_character"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_disorder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_disorder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_drug -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_drug">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_food -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results_by_food">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_abundance_change_results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results_by_metabolite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results_by_metabolite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results_by_microbiota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results_by_microbiota">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_expression_change_results"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_generation_results -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_generation_results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_kegg_character -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#involves_in_kegg_character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_disorder -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_disorder">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_drug -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_drug">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_food -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance_by_food">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_abundance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression_by_metabolite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression_by_metabolite">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression_by_microbiota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression_by_microbiota">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_changed_the_expression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_generated_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#is_generated_by"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#disorder_do_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#disorder_do_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#disorder_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#disorder_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#drug_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#drug_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#drugbank_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#drugbank_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#food_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#food_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_expression_alteration_caused_by_metabolite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_expression_alteration_caused_by_metabolite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_expression_alteration_caused_by_microbiota -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_expression_alteration_caused_by_microbiota">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_host_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_host_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_symbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gene_symbol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_classification -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_classification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_taxonomy_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#gut_microbiota_taxonomy_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_brite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_brite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_motif -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_motif">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_network -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_network">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_network_element -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_network_element">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_organism -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_organism">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_orthology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_orthology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_pathway -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_pathway">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_symbol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#kegg_symbol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_chebi_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_chebi_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_evidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_evidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_host_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_host_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_index">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_substrate_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_substrate_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_throughput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_gene_throughput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_hmdb_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_hmdb_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_pubchem_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#metabolite_pubchem_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_alteration_caused_by_disorder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_alteration_caused_by_disorder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_alteration_caused_by_drug -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_alteration_caused_by_drug">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_alteration_caused_by_food -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_alteration_caused_by_food">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_evidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_evidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_host_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_host_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_index">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_sequencing_technology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_disorder_sequencing_technology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_evidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_evidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_host_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_host_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_index">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_sequencing_technology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_drug_sequencing_technology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_evidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_evidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_host_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_host_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_index">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_sequencing_technology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_food_sequencing_technology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_evidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_evidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_experimental_method -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_experimental_method">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_host_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_host_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_index">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_sequencing_technology -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_sequencing_technology">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_throughput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_gene_throughput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_evidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_evidence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_host_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_host_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_index">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_substrate_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#microbiota_metabolite_substrate_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#ncbi_gene_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#ncbi_gene_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Disorder_Gut_Microbiota_Change_Results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Drug_Gut_Microbiota_Change_Results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Food_Gut_Microbiota_Change_Results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gene_KEGG_Characters"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Gene_Change_Results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Gut_Microbiota_Metabolite_Generation_Results"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology#Metabolite_Gene_Change_Results"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

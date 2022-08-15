@@ -2,6 +2,16 @@
 
 #### Q1 Which human gut microbes will change the expression of gene Nfkb1 and what diet will affect these gut microbes?
 
+##### Datalog+ query statements
+
+```
+?(Gene,Microbiota,Alteration_gene,Food):-
+relationship:has_expression_change_results_by_microbiotaQ1(<Nfkb1>,Microbiota_Gene_Index,Microbiota),
+relationship:has_expression_change_results_by_microbiotaQ1(Gene,Microbiota_Gene_Index,Microbiota),
+attribute:gene_expression_alteration_caused_by_microbiotaQ1(Microbiota_Gene_Index,Alteration_gene),
+relationship:changes_the_abundance_of_by_foodQ1(Food,Microbiota,<changes_the_abundance_of_by_food>).
+```
+
 ##### federated query results
 
 ```json
