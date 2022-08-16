@@ -7,7 +7,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology">
-        <owl:versionIRI rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology/2.1"/>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/zhang/ontologies/gut_microbiota_ontology/2.2"/>
     </owl:Ontology>
     
 
